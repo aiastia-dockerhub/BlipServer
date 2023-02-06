@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   openaibot:
-    image: aiastia/BlipServer:main
+    image: aiastia/blipserver:main
     command: python3 app.py
     volumes:
       - ./:/app
