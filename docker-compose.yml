@@ -4,6 +4,7 @@ services:
   openaibot:
     image: aiastia/blipserver:main
     command: python3 app.py
+    restart: always
     volumes:
       - ./:/app
     ports:
