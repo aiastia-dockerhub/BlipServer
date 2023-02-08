@@ -6,10 +6,5 @@ services:
     command: python3 app.py
     volumes:
       - ./:/app
-    networks:
-      - app-tier
-  
-
-networks:
-  app-tier:
-    driver: bridge
+    ports:
+      - "10885:10885"
